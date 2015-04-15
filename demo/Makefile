@@ -8,7 +8,7 @@ VIEWS = qsort
 
 CC      = gcc
 CFLAGS  = -g -Werror -gdwarf-3 -std=gnu99 -fcilkplus
-LDFLAGS = -lcilkrts -ldl
+LDFLAGS = -lcilkrts -ldl -Wl,-rpath,/usr/local/lib
 #INCLUDES = -I/afs/csail.mit.edu/proj/courses/7.172/cilkutil/include
 INCLUDES = -I/../cilktools/include/
 
