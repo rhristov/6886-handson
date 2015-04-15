@@ -5,7 +5,7 @@ aclocal
 automake --add-missing
 autoconf
 ./configure
-make
+make -j8
 make install
 cd ..
 cp /usr/local/lib/libcilkrts.so.5 /usr/local/lib/libcilkrts.so.0
